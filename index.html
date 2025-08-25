@@ -1,0 +1,123 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>I'm Sorry — Can We Talk?</title>
+  <meta name="description" content="A heartfelt apology and a gentle request to reconnect." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #f472b6;
+      --accent-2: #22d3ee;
+      --success: #34d399;
+      --danger: #fb7185;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0; font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(1200px 800px at 20% 10%, rgba(250, 113, 182, 0.08), transparent 60%),
+                  radial-gradient(1000px 700px at 80% 20%, rgba(34, 211, 238, 0.08), transparent 60%),
+                  linear-gradient(180deg, #0b1020 0%, var(--bg) 30%);
+      color: var(--text); line-height: 1.6;
+    }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 32px 20px 80px; }
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 22px; padding: 28px; backdrop-filter: blur(6px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+    }
+    h1 { font-size: clamp(28px, 3.8vw, 44px); margin: 0 0 6px; letter-spacing: -0.02em; }
+    .sub { color: var(--muted); margin: 0 0 24px; font-size: clamp(14px, 2.2vw, 18px); }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+    @media (min-width: 820px) { .grid { grid-template-columns: 1.25fr 0.75fr; gap: 22px; } }
+    .section { background: rgba(17,24,39,0.6); border: 1px solid rgba(255,255,255,0.08); border-radius: 18px; padding: 18px 18px; }
+    .section h2 { font-size: 18px; margin: 0 0 10px; color: #ffffff; }
+    .section p { margin: 8px 0; color: var(--text); }
+    .muted { color: var(--muted); }
+    .badges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+    .badge { padding: 8px 12px; border-radius: 999px; font-size: 12px; border: 1px dashed rgba(255,255,255,0.18); background: rgba(255,255,255,0.03); }
+    .cta-row { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 18px; }
+    @media (min-width: 560px) { .cta-row { grid-template-columns: 1fr 1fr; } }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 14px 18px; border-radius: 14px; border: 1px solid rgba(255,255,255,0.12); background: linear-gradient(180deg, rgba(244,114,182,0.18), rgba(244,114,182,0.12)); color: white; text-decoration: none; font-weight: 600; cursor: pointer; }
+    .btn:hover { transform: translateY(-1px); box-shadow: 0 12px 28px rgba(250, 113, 182, 0.15); }
+    .btn.alt { background: linear-gradient(180deg, rgba(34,211,238,0.18), rgba(34,211,238,0.12)); }
+    .btn.safe { background: linear-gradient(180deg, rgba(52,211,153,0.18), rgba(52,211,153,0.12)); }
+    .footer { text-align: center; margin-top: 26px; color: var(--muted); font-size: 12px; }
+    .floating-heart { position: fixed; right: 14px; bottom: 14px; width: 52px; height: 52px; border-radius: 14px; background: radial-gradient(80% 80% at 50% 30%, rgba(244,114,182,0.6), rgba(244,114,182,0.15)); border: 1px solid rgba(255,255,255,0.18); display: grid; place-items: center; user-select: none; opacity: 0.9; }
+    .floating-heart span { font-size: 22px; }
+    .divider { height: 1px; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.12), transparent); margin: 16px 0; }
+    .center { text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>I'm sorry.</h1>
+      <p class="sub">I don’t know if or how I hurt you, but I feel something went wrong. You’ve been distant and I don’t understand why. I genuinely want to make things right and hope we can talk whenever you feel ready, like we used to.</p>
+      <div class="grid">
+        <section class="section">
+          <h2>My thoughts</h2>
+          <p>• I might have said or done something that upset you and I'm extremely sorry for that, i promise I'll fix everything just talk to me please.</p>
+          <p>• I respect your space and don’t want to pressure you but I really wanna talk to you, i miss you a lot.</p>
+          <p>• I genuinely hope we can clear any misunderstandings and talk like we used to, i hope you can forgive me and give me another chance.</p>
+          <div class="divider"></div>
+          <h2>What I promise</h2>
+          <p>• I’ll listen carefully without assumptions and do as you say, I'll do whatever you want me to.</p>
+          <p>• I’ll respect your pace and your feelings and that's why I'll never hurt your feelings i promise.</p>
+          <p>• I want to reconnect in a positive and honest way, just like before and I'll fix everything just tell me what happened.</p>
+          <div class="badges">
+            <span class="badge">Respect</span>
+            <span class="badge">Patience</span>
+            <span class="badge">Honesty</span>
+            <span class="badge">Understanding</span>
+          </div>
+        </section>
+        <section class="section">
+          <h2>Can we talk when you’re ready?</h2>
+          <p class="muted">Whether it’s a message first, a quick call, or a chat, I’ll follow your comfort and timing. I hope we can talk like we used to.</p>
+          <div class="cta-row">
+            <a class="btn alt" href="tel:+918822322905">Call (when you feel okay)</a>
+            <a class="btn safe" href="https://wa.me/918822322905?text=Hey%2C%20let's%20talk" target="_blank" rel="noopener">WhatsApp (short chat)</a>
+            <a class="btn" href="mailto:manasmanasprbordoloi@email.com?subject=Let%27s%20Talk&body=I%27m%20ready%20to%20talk%20when%20you%20are.%20">Email (your time)</a>
+          </div>
+          <p class="muted center" style="margin-top:12px">If you need space, I respect that. Thank you for reading this. 💜</p>
+        </section>
+      </div>
+      <p class="footer">Made with care — and a hope to reconnect.</p>
+    </div>
+  </div>
+  <div class="floating-heart" title="I’m sorry"><span>💗</span></div>
+</body>
+</html>XXXXXXXX?text=Hey%2C%20let%27s%20talk" target="_blank" rel="noopener">WhatsApp (short chat)</a>
+        <a class="btn" href="mailto:manasmanasprbordoloi@email.com?subject=Let%27s%20Talk&body=I%27m%20ready%20to%20talk%20when%20you%20are.%20">Email (your time)</a>
+      </div>
+
+      <div class="divider"></div>
+      <p class="muted center" style="margin-top:12px">If you need space, I respect that. Thank you for reading this. 💜</p>
+    </section>
+  </div>
+
+  <p class="footer">Made with care — and a promise to do better.</p>
+</div>
+
+  </div>  <div class="floating-heart" title="I’m sorry">
+    <span>💗</span>
+  </div>  <script>
+    // Optional: subtle entrance animation
+    document.addEventListener('DOMContentLoaded', () => {
+      const card = document.querySelector('.card');
+      card.animate([
+        { transform: 'translateY(10px)', opacity: 0 },
+        { transform: 'translateY(0)', opacity: 1 }
+      ], { duration: 600, easing: 'cubic-bezier(.2,.8,.2,1)', fill: 'both' });
+    });
+  </script></body>
+</html>
